@@ -1,0 +1,104 @@
+.btn-header {
+  position: relative;
+  padding: 10px 18px;
+  border-radius: 6px;
+  color: var(--color-light);
+  background-color: var(--color-olive);
+
+  &__left {
+    margin-left: 30px;
+    margin-right: 20px;
+
+    @include small-mobile {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__right {
+    position: relative;
+    width: 125px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 9px;
+        right: 0px;
+        left: 13px;
+        bottom: 0;
+        width: 20px;
+        height: 20px;
+        fill: var(--color-light);
+        background-image: url("../img/svg/basket.svg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &::after {
+        content: "0";
+        position: absolute;
+        padding: 1px;
+        top: 9px;
+        right: 13px;
+        width: 20px;
+        height: 20px;
+        color: var(--color-olive);
+        border-radius: 100px;
+        background: var(--color-light);
+        border-radius: 9px;
+
+        @include small-mobile {
+          padding: 3px;
+        }
+    }
+
+  }
+
+  @include small-mobile {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 12px;
+    width: 120px;
+  }
+}
+
+.btn {
+  position: relative;
+  font-size: 15px;
+  line-height: 21px;
+  color: var(--color-olive);
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    top: 6px;
+    right: -30px;
+    background-image: url("../img/svg/arrow.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+    &--history {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__check {
+    padding: 10px 18px;
+    border-radius: 6px;
+    color: #000000;
+    background-color: var(--color-light);
+  }
+
+  &__offering {
+    width: 180px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

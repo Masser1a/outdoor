@@ -1,0 +1,64 @@
+.check {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-color: #375C58;
+  background-image: url("../img/svg/combined-shape.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+
+  @include tablet {
+    padding: 80px 0;
+  }
+
+  @include small-mobile {
+    padding: 50px 0;
+  }
+
+  &__content {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 540px;
+
+  }
+
+  &__span {
+    margin: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FAFAFC;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 36px;
+    line-height: 43px;
+    color: #E6B939;
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FAFAFC;
+  }
+
+  @include big-desktop {
+    background-image: none;
+  }
+
+
+}

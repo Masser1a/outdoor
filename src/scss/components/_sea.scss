@@ -1,0 +1,62 @@
+.sea {
+  position: relative;
+  height: 600px;
+  background-image: url("../img/sea.jpg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  &__list {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 22px;
+    width: 615px;
+    right: 40px;
+    bottom: 60px;
+    font-size: 12px;
+    line-height: 12px;
+    color: var(--color-light);
+    border-radius: 16px;
+    background-color: #292C32;
+
+    a {
+      color: var(--color-light);
+    }
+  }
+
+  &__item {
+    &--basket{
+      background-image: url("../img/svg/basket.svg");
+      background-size: 14px 14px;
+      background-position: left;
+      background-repeat: no-repeat;
+    }
+    &--camera{
+      background-image: url("../img/svg/camera.svg");
+      background-size: 14px 14px;
+      background-position: left;
+      background-repeat: no-repeat;
+    }
+    &--person{
+      background-image: url("../img/svg/person.svg");
+      background-size: 14px 14px;
+      background-position: left;
+      background-repeat: no-repeat;
+    }
+    &--cursor{
+      background-image: url("../img/svg/cursor.svg");
+      background-size: 14px 14px;
+      background-position: left;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__link {
+    padding-left: 30px;
+  }
+
+  @include big-desktop {
+    display: none;
+  }
+}
